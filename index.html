@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form and To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+  <div class="contact-form">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="formMessage" style="color: green; display: none; text-align: center; margin-top: 10px;">
+    Form submitted successfully!
+  </p>
+</div>
+<div class="todo-list">
+  <h2>To-Do List</h2>
+  <input type="text" id="taskInput" placeholder="Add new task" />
+  <input type="file" id="imageInput" accept="image/*" />
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
